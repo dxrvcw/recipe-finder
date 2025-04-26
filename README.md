@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🍳 Recipes App
 
-## Getting Started
+## 📜 Project Overview
 
-First, run the development server:
+This project is a web application that allows users to search and view detailed recipes. The application fetches data from an external API (Spoonacular) to provide recipes based on search queries like cuisine type, preparation time, and more.
+
+## 🚀 Features
+
+- **Recipe Search**: Users can search for recipes by keywords, cuisine, and maximum preparation time.
+- **Recipe Details**: Each recipe includes a detailed page with information about ingredients, preparation time, servings, and more.
+- **Pagination**: Recipe results are displayed in paginated format, allowing users to navigate through multiple pages of results.
+- **Responsive Design**: The app is fully responsive, adapting to different screen sizes and devices.
+- **Error Handling**: If a recipe cannot be fetched or doesn't exist, appropriate error handling is in place, directing users to a "Not Found" page.
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+# or
+yarn install
+```
+
+### 3. Set up environment variables
+
+Create a `.env.local` file in the root of your project:
+
+```bash
+API_BASE_URL=https://api.spoonacular.com
+SPOONACULAR_API_KEY=your-spoonacular-api-key
+```
+
+💡 You can get your API key from [Spoonacular API](https://spoonacular.com/food-api).
+
+### 4. Run the development server
 
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 📦 Building for Production
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm run build
+npm start
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🛠 Tech Stack
 
-## Learn More
+- **Next.js 14 (App Router)**
+- **TypeScript**
+- **TailwindCSS**
+- **Spoonacular API**
 
-To learn more about Next.js, take a look at the following resources:
+## 📸 Screenshots
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+![Home Page](./screenshots/homepage.PNG) ![Recipes List](./screenshots/recipes.PNG) ![Recipe Details Page](./screenshots/details.PNG)
